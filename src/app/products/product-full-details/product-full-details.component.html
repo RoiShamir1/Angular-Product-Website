@@ -1,0 +1,19 @@
+<div class="container">
+  <h2>
+    {{ product.name }}
+  </h2>
+  <div>
+    {{ product.datePublished | date : "dd/MM/YY" }}
+  </div>
+  <div>
+    {{ product.description | substring }}
+  </div>
+  <div>
+    <img [src]="product.imageUrl" />
+  </div>
+  <div>{{ product.price }} ILS</div>
+  <div>{{ product.city }} , {{ product.phoneNum }}</div>
+  <div>
+    <a [routerLink]="'/products/'"> return to home page </a>
+  </div>
+</div>

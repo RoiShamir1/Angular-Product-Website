@@ -1,0 +1,53 @@
+<div class="container">
+  <button (click)="sortProductByPrice()">Sort by price</button>
+  <button (click)="sortProductById()">Sort by Id</button>
+  <div *ngFor="let prod of products">
+    <app-product
+      [product]="prod"
+      (onDelete)="deleteProduct($event)"
+      (onUpdate)="updateProduct($event)"
+    ></app-product>
+  </div>
+  <div *ngIf="errorMessage">
+    {{ errorMessage }}
+  </div>
+</div>
+
+<!-- <button (click)="sortProductByPrice()">Sort by price</button>
+<button (click)="sortProductById()">Sort by Id</button>
+<div *ngFor="let prod of products">
+  <app-product
+    [product]="prod"
+    (onDelete)="deleteProduct($event)"
+    (onUpdate)="updateProduct($event)"
+  ></app-product>
+</div>
+<div *ngIf="errorMessage">
+  {{ errorMessage }}
+</div> -->
+
+<div class="NewProduct">
+<h1>Add new product</h1>
+<form #productForm="ngForm">
+  <div>Name: <input type="text" [(ngModel)]="newProduct.name" required minlength="3" name="name" #nameFiled="ngModel" /></div>
+  <div *ngIf="nameFiled.invalid" class="error">Name is required</div>
+
+  <div>Published: <input type="date" [(ngModel)]="newProduct.datePublished" required name="date" #dateFiled="ngModel"/></div>
+
+  <div>imageUrl: <input type="text" [(ngModel)]="newProduct.imageUrl" required name="img" #imgFiled="ngModel" /></div>
+  <div *ngIf="imgFiled.invalid" class="error">imageUrl is required</div>
+
+  <div>Price: <input type="number" [(ngModel)]="newProduct.price" min="5" max="10000" required name="price" #priceFiled="ngModel"/></div>
+  <div *ngIf="priceFiled.invalid" class="error">Price is required</div>
+
+  <div>Description: <input type="text" [(ngModel)]="newProduct.description" required name="description" #desFiled="ngModel"/></div>
+  <div *ngIf="desFiled.invalid" class="error">Description is required</div>
+
+  <div>City: <input type="text" [(ngModel)]="newProduct.city" required name="city" #cityFiled="ngModel"/></div>
+  <div *ngIf="cityFiled.invalid" class="error">City is required</div>
+
+  <div>Phone Number: <input type="number" [(ngModel)]="newProduct.phoneNum" required name="Phone" #numFiled="ngModel"/></div>
+  <div *ngIf="numFiled.invalid" class="error">Name is required</div>
+  <button [disabled]="productForm.form.invalid" (click)="addProduct()">Add product</button>
+</form>
+</div>

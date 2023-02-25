@@ -1,0 +1,46 @@
+input.ng-invalid {
+  background-color: pink;
+}
+
+input.ng-valid.ng-dirty {
+  background-color: lightgreen;
+}
+
+.error {
+  color: red;
+}
+
+div input {
+  width: 100%;
+  padding: 0.5em;
+  margin-bottom: 1em;
+  border-radius: 14px;
+  border: 1px solid gray;
+}
+
+form {
+  width: 250px;
+}
+
+form button:hover {
+  background-color: darkblue;
+}
+
+form button {
+  background-color: blue;
+  color: white;
+  padding: 0.5em 1em;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  left: 80px;
+}
+
+.NewProduct {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}

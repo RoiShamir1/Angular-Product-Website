@@ -1,0 +1,16 @@
+<div class="container">
+  <h2>
+    {{ product.name }}
+  </h2>
+  <div>
+    {{ product.datePublished | date : "dd/MM/YY" }}
+  </div>
+  <div>
+    <img [src]="product.imageUrl" />
+  </div>
+  <div>{{ product.price }} ILS</div>
+  <button (click)="deleteHandler()">Purchase</button>
+  <nav>
+    <a [routerLink]="'/product/' + product.id"> Product Details </a>
+  </nav>
+</div>

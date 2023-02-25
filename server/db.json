@@ -1,0 +1,64 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "PlayStation 1",
+      "datePublished": "03/02/23",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/6/60/PlayStation-SCPH-1000-with-Controller.jpg",
+      "price": 15000,
+      "description": "good product",
+      "city": "Ashdod",
+      "phoneNum": "0525845"
+    },
+    {
+      "id": 2,
+      "name": "PlayStation 2",
+      "datePublished": "03/02/23",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/1/1c/PS2-Versions.jpg",
+      "price": 750,
+      "description": "good product",
+      "city": "Ashdod",
+      "phoneNum": "0525845"
+    },
+    {
+      "id": 3,
+      "name": "PlayStation 3",
+      "datePublished": "03/02/23",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d3/Sony-PlayStation-3-2001A-wController-L.jpg",
+      "price": 450,
+      "description": "good product",
+      "city": "Ashdod",
+      "phoneNum": "0525845"
+    },
+    {
+      "id": 4,
+      "name": "PlayStation 4",
+      "datePublished": "03/02/23",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/7/71/Sony-PlayStation-4-PS4-wDualShock-4.jpg",
+      "price": 850,
+      "description": "good product",
+      "city": "Ashdod",
+      "phoneNum": "0525845"
+    },
+    {
+      "id": 5,
+      "name": "PlayStation 5",
+      "datePublished": "03/02/23",
+      "imageUrl": "https://as01.epimg.net/meristation/imagenes/2020/11/18/noticias/1605740083_818108_1605740214_noticia_normal.jpg",
+      "price": 2500,
+      "description": "good product",
+      "city": "Ashdod",
+      "phoneNum": "0525845"
+    },
+    {
+      "id": 6,
+      "name": "X BOX SX",
+      "datePublished": "2023-02-04",
+      "imageUrl": "https://m.media-amazon.com/images/I/610LeK9gl5L._AC_SX425_.jpg",
+      "price": 2300,
+      "description": "ps5 is better",
+      "city": "Ashdod",
+      "phoneNum": 525625252
+    }
+  ]
+}
